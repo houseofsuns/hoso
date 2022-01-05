@@ -3,11 +3,13 @@
 
 EAPI=8
 
+inherit rpm
+
 DSC_src="f/03/00/13/38/11/01e244e8529c5cbcec8d39220a9512d5e6c08eec"
 
 DESCRIPTION="Epson Inkjet Printer Driver (ESC/P-R) 2"
 HOMEPAGE="https://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
-SRC_URI="https://download3.ebz.epson.net/dsc/${DSC_src}/epson-inkjet-printer-escpr2-${PV}.tar.gz"
+SRC_URI="https://download3.ebz.epson.net/dsc/${DSC_src}/epson-inkjet-printer-escpr2-${PV}-1lsb3.2.src.rpm"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86 ~arm ~arm64"
@@ -23,6 +25,11 @@ PATCHES=(
 	# Patch URL: https://aur.archlinux.org/cgit/aur.git/tree/bug_x86_64.patch?h=epson-inkjet-printer-escpr2
 	"${FILESDIR}/bug_x86_64.patch"
 )
+
+src_unpack() {
+	rpm_src_unpack ${A}
+	cd "${S}"
+}
 
 src_configure() {
 	econf --disable-shared
