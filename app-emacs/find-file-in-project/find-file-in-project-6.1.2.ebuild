@@ -3,16 +3,16 @@
 
 EAPI=8
 
-REPO_URI="https://elpa.gnu.org/packages/"
+REPO_URI="https://stable.melpa.org/packages/"
 SOURCE_TYPE="single"
-REALNAME="let-alist"
+REALNAME="find-file-in-project"
 DIGEST_SOURCES="yes"
 
 inherit g-sorcery gs-elpa
 
-DESCRIPTION="Easily let-bind values of an assoc-list by their names"
+DESCRIPTION="Find filedirectory and review DiffPatchCommit efficiently"
 
-HOMEPAGE="https://elpa.gnu.org/packages/"
+HOMEPAGE="https://stable.melpa.org/packages/"
 SRC_URI="${REPO_URI}${REALNAME}-${PV}.${SUFFIX}"
 
 SLOT="0"

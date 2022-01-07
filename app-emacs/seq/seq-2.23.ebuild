@@ -4,13 +4,13 @@
 EAPI=8
 
 REPO_URI="https://elpa.gnu.org/packages/"
-SOURCE_TYPE="single"
-REALNAME="let-alist"
+SOURCE_TYPE="tar"
+REALNAME="seq"
 DIGEST_SOURCES="yes"
 
 inherit g-sorcery gs-elpa
 
-DESCRIPTION="Easily let-bind values of an assoc-list by their names"
+DESCRIPTION="Sequence manipulation functions"
 
 HOMEPAGE="https://elpa.gnu.org/packages/"
 SRC_URI="${REPO_URI}${REALNAME}-${PV}.${SUFFIX}"

@@ -3,20 +3,20 @@
 
 EAPI=8
 
-REPO_URI="https://elpa.gnu.org/packages/"
+REPO_URI="https://stable.melpa.org/packages/"
 SOURCE_TYPE="single"
-REALNAME="let-alist"
+REALNAME="dash-functional"
 DIGEST_SOURCES="yes"
 
 inherit g-sorcery gs-elpa
 
-DESCRIPTION="Easily let-bind values of an assoc-list by their names"
+DESCRIPTION="Collection of useful combinators for Emacs Lisp"
 
-HOMEPAGE="https://elpa.gnu.org/packages/"
+HOMEPAGE="https://stable.melpa.org/packages/"
 SRC_URI="${REPO_URI}${REALNAME}-${PV}.${SUFFIX}"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND=""
-RDEPEND=""
+DEPEND="app-emacs/dash"
+RDEPEND="app-emacs/dash"
