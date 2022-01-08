@@ -3,7 +3,7 @@
 
 EAPI=8
 
-REPO_URI="https://stable.melpa.org/packages/"
+REPO_URI="https://elpa.gnu.org/packages/"
 SOURCE_TYPE="tar"
 REALNAME="ivy"
 DIGEST_SOURCES="yes"
@@ -12,7 +12,7 @@ inherit g-sorcery gs-elpa
 
 DESCRIPTION="Incremental Vertical completYon"
 
-HOMEPAGE="https://stable.melpa.org/packages/"
+HOMEPAGE="https://elpa.gnu.org/packages/"
 SRC_URI="${REPO_URI}${REALNAME}-${PV}.${SUFFIX}"
 
 SLOT="0"
