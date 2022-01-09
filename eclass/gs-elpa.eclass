@@ -31,7 +31,7 @@ EXPORT_FUNCTIONS src_{unpack,compile,install}
 
 # The live property will disable Portage's network-sandbox in src_unpack()
 PROPERTIES+=" live"
--
+
 if [[ ${SOURCE_TYPE} != "single" ]]; then
 	SUFFIX="${SOURCE_TYPE}"
 else
