@@ -16,6 +16,7 @@ KEYWORDS="amd64 x86 ~arm ~arm64"
 IUSE="escprlib"
 
 RDEPEND="net-print/cups
+		 net-print/epson-inkjet-printer-escpr
 		 !net-print/epson-inkjet-printer-escpr2-bin"
 DEPEND="${RDEPEND}"
 
