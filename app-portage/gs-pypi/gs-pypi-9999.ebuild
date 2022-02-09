@@ -18,7 +18,7 @@ LICENSE="GPL-2"
 SLOT="0"
 
 DEPEND=">=app-portage/g-sorcery-9999[bson(-),git(-),${PYTHON_USEDEP}]
-	   dev-python/beautifulsoup:4[${PYTHON_USEDEP}]"
+	   dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
 
 src_prepare() {
