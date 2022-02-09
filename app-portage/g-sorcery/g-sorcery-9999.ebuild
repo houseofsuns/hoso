@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -8,7 +8,7 @@ DISTUTILS_USE_SETUPTOOLS=no
 
 inherit distutils-r1 prefix
 
-EGIT_REPO_URI="/compat/home/markus/gentoo/gsource/g-sorcery/"
+EGIT_REPO_URI="/home/markus/q/gentoo/gsource/g-sorcery/"
 inherit git-r3
 
 
