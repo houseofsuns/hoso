@@ -305,7 +305,8 @@ inherit cargo
 
 DESCRIPTION="atuin - magical shell history"
 HOMEPAGE="https://github.com/ellie/atuin"
-SRC_URI="$(cargo_crate_uris)"
+SRC_URI="https://github.com/ellie/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+		 $(cargo_crate_uris)"
 
 LICENSE="MIT"
 SLOT="0"
