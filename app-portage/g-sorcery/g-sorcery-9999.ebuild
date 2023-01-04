@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{7..10} )
+PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_SETUPTOOLS=no
 
 inherit distutils-r1 prefix
@@ -21,11 +21,10 @@ SLOT="0"
 IUSE="bson git test"
 RESTRICT="!test? ( test )"
 
-BDEPEND="
-	bson? ( dev-python/pymongo[${PYTHON_USEDEP}] )
+RDEPEND="bson? ( dev-python/pymongo[${PYTHON_USEDEP}] )
 	git? ( dev-vcs/git )
 	sys-apps/portage[${PYTHON_USEDEP}]"
-RDEPEND="${BDEPEND}"
+BDEPEND="${RDEPEND}"
 PDEPEND=">=app-portage/layman-2.2.0[g-sorcery(-),${PYTHON_USEDEP}]"
 
 src_prepare() {

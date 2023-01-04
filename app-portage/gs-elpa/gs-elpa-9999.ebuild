@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{7..10} )
+PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_USE_SETUPTOOLS=no
 
 inherit distutils-r1 prefix
@@ -18,9 +18,9 @@ HOMEPAGE="https://gitweb.gentoo.org/proj/gs-elpa.git
 LICENSE="GPL-2"
 SLOT="0"
 
-DEPEND="app-portage/g-sorcery[${PYTHON_USEDEP}]
+RDEPEND="app-portage/g-sorcery[${PYTHON_USEDEP}]
 	dev-python/sexpdata[${PYTHON_USEDEP}]"
-RDEPEND="${DEPEND}"
+BDEPEND="${RDEPEND}"
 
 src_prepare() {
 	hprefixify setup.py
