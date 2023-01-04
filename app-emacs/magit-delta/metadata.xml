@@ -2,8 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>jauhien@gentoo.org</email>
-		<name>Jauhien Piatlicki</name>
+		<email>gentoo@jonglieren-jena.de</email>
+		<name>Markus Walter</name>
 	</maintainer>
 	<longdescription>Use Delta when displaying diffs in Magit</longdescription>
 </pkgmetadata>
