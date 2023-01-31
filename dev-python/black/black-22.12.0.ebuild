@@ -22,27 +22,27 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 IUSE="+colorama +d +jupyter +uvloop"
-BDEPEND=">=dev-python/click-(8, 0)[${PYTHON_USEDEP}]
-	>=dev-python/mypy-extensions-(0, 3)[${PYTHON_USEDEP}]
-	>=dev-python/pathspec-(0, 0)[${PYTHON_USEDEP}]
-	>=dev-python/platformdirs-(2, 0)[${PYTHON_USEDEP}]
-	>=dev-python/tomli-(1, 0)[${PYTHON_USEDEP}]
-	>=dev-python/typed-ast-(1, 2)[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-(3, 0)[${PYTHON_USEDEP}]
-	colorama? ( >=dev-python/colorama-(0, 3)[${PYTHON_USEDEP}] )
-	d? ( >=dev-python/aiohttp-(3, 4)[${PYTHON_USEDEP}] )
-	jupyter? ( >=dev-python/ipython-(7, 0)[${PYTHON_USEDEP}] )
-	jupyter? ( >=dev-python/tokenize-rt-(3, 0)[${PYTHON_USEDEP}] )
-	uvloop? ( >=dev-python/uvloop-(0, 2)[${PYTHON_USEDEP}] )"
-RDEPEND=">=dev-python/click-(8, 0)[${PYTHON_USEDEP}]
-	>=dev-python/mypy-extensions-(0, 3)[${PYTHON_USEDEP}]
-	>=dev-python/pathspec-(0, 0)[${PYTHON_USEDEP}]
-	>=dev-python/platformdirs-(2, 0)[${PYTHON_USEDEP}]
-	>=dev-python/tomli-(1, 0)[${PYTHON_USEDEP}]
-	>=dev-python/typed-ast-(1, 2)[${PYTHON_USEDEP}]
-	>=dev-python/typing-extensions-(3, 0)[${PYTHON_USEDEP}]
-	colorama? ( >=dev-python/colorama-(0, 3)[${PYTHON_USEDEP}] )
-	d? ( >=dev-python/aiohttp-(3, 4)[${PYTHON_USEDEP}] )
-	jupyter? ( >=dev-python/ipython-(7, 0)[${PYTHON_USEDEP}] )
-	jupyter? ( >=dev-python/tokenize-rt-(3, 0)[${PYTHON_USEDEP}] )
-	uvloop? ( >=dev-python/uvloop-(0, 2)[${PYTHON_USEDEP}] )"
+BDEPEND=">=dev-python/click-8.0.0[${PYTHON_USEDEP}]
+	>=dev-python/mypy-extensions-0.4.3[${PYTHON_USEDEP}]
+	>=dev-python/pathspec-0.9.0[${PYTHON_USEDEP}]
+	>=dev-python/platformdirs-2.0[${PYTHON_USEDEP}]
+	>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/typed-ast-1.4.2[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.10.0.0[${PYTHON_USEDEP}]
+	colorama? ( >=dev-python/colorama-0.4.3[${PYTHON_USEDEP}] )
+	d? ( >=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}] )
+	jupyter? ( >=dev-python/ipython-7.8.0[${PYTHON_USEDEP}] )
+	jupyter? ( >=dev-python/tokenize-rt-3.2.0[${PYTHON_USEDEP}] )
+	uvloop? ( >=dev-python/uvloop-0.15.2[${PYTHON_USEDEP}] )"
+RDEPEND=">=dev-python/click-8.0.0[${PYTHON_USEDEP}]
+	>=dev-python/mypy-extensions-0.4.3[${PYTHON_USEDEP}]
+	>=dev-python/pathspec-0.9.0[${PYTHON_USEDEP}]
+	>=dev-python/platformdirs-2.0[${PYTHON_USEDEP}]
+	>=dev-python/tomli-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/typed-ast-1.4.2[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.10.0.0[${PYTHON_USEDEP}]
+	colorama? ( >=dev-python/colorama-0.4.3[${PYTHON_USEDEP}] )
+	d? ( >=dev-python/aiohttp-3.7.4[${PYTHON_USEDEP}] )
+	jupyter? ( >=dev-python/ipython-7.8.0[${PYTHON_USEDEP}] )
+	jupyter? ( >=dev-python/tokenize-rt-3.2.0[${PYTHON_USEDEP}] )
+	uvloop? ( >=dev-python/uvloop-0.15.2[${PYTHON_USEDEP}] )"
