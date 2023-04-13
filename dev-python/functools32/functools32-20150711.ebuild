@@ -14,7 +14,7 @@ inherit python-r1 gs-pypi
 DESCRIPTION="Backport of the functools module from Python 3.2.3 for use on 2.7 and PyPy."
 
 HOMEPAGE="https://github.com/MiCHiLU/python-functools32"
-LICENSE="PSF license"
+LICENSE="PYTHON"
 SRC_URI="https://files.pythonhosted.org/packages/source/f/${REALNAME}/${REALNAME}-${REALVERSION}.tar.gz"
 SOURCEFILE="${REALNAME}-${REALVERSION}.tar.gz"
 RESTRICT="test"
