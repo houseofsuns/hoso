@@ -23,7 +23,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 IUSE="develop"
-DEPENDENCIES="dev-python/functools32[${PYTHON_USEDEP}]
-	develop? ( dev-python/sphinx[${PYTHON_USEDEP}] )"
+DEPENDENCIES="develop? ( dev-python/sphinx[${PYTHON_USEDEP}] )"
 BDEPEND="${DEPENDENCIES}"
 RDEPEND="${DEPENDENCIES}"
