@@ -42,9 +42,11 @@ g-sorcery_fetch() {
 g-sorcery_src_unpack() {
 	if [[ x${DIGEST_SOURCES} = x ]]; then
 		g-sorcery_fetch
-		cp ${GSORCERY_STORE_DIR}/${SOURCEFILE} . || die
-		unpack ./${SOURCEFILE}
-	else
-		default_src_unpack
 	fi
+
+	cp ${GSORCERY_STORE_DIR}/${SOURCEFILE} . || die
+	# This will be a nop if the source file is not an archive. If it is
+	# an archive the previous copy could be omitted, but this way it
+	# works in any case.
+	unpack ./${SOURCEFILE}
 }
