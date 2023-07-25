@@ -11,7 +11,6 @@ inherit distutils-r1 prefix
 EGIT_REPO_URI="/home/markus/q/gentoo/gsource/g-sorcery/"
 inherit git-r3
 
-
 DESCRIPTION="framework for ebuild generators"
 HOMEPAGE="https://gitweb.gentoo.org/proj/g-sorcery.git
 	https://github.com/jauhien/g-sorcery"
@@ -25,7 +24,6 @@ RDEPEND="bson? ( dev-python/pymongo[${PYTHON_USEDEP}] )
 	git? ( dev-vcs/git )
 	sys-apps/portage[${PYTHON_USEDEP}]"
 BDEPEND="${RDEPEND}"
-PDEPEND=">=app-portage/layman-2.2.0[g-sorcery(-),${PYTHON_USEDEP}]"
 
 src_prepare() {
 	hprefixify setup.py
