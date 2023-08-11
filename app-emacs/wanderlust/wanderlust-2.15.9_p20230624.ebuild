@@ -24,6 +24,11 @@ DEPEND="${RDEPEND}"
 
 SITEFILE="50${PN}-gentoo.el"
 
+src_prepare() {
+	sed -i -e "s/PACKAGE_LISPDIR = package-user-dir/PACKAGE_LISPDIR = NONE/" "${S}/Makefile" || die
+	default
+}
+
 src_configure() {
 	local lang="\"en\""
 	use l10n_ja && lang="${lang} \"ja\""
