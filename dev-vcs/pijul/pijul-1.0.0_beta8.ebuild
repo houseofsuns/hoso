@@ -226,6 +226,7 @@ CRATES="
 	pbkdf2@0.8.0
 	pbkdf2@0.9.0
 	percent-encoding@2.3.0
+	pijul@1.0.0-beta.8
 	pijul-macros@0.5.0
 	pin-project-lite@0.2.13
 	pin-utils@0.1.0
