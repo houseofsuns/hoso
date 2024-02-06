@@ -413,6 +413,7 @@ KEYWORDS="~amd64"
 src_unpack() {
 	cargo_src_unpack
 
+	# Fix for beta naming mismatch
 	rmdir "${WORKDIR}/${P}" || die
 	mv "${WORKDIR}/cargo_home/gentoo/pijul-1.0.0-beta.8/" "${WORKDIR}/${P}" || die
 }
