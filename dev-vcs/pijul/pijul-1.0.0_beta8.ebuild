@@ -409,3 +409,10 @@ virtual/pkgconfig
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64"
+
+src_unpack() {
+	cargo_src_unpack
+
+	rmdir "${WORKDIR}/${P}" || die
+	mv "${WORKDIR}/cargo_home/gentoo/pijul-1.0.0-beta.8/" "${WORKDIR}/${P}" || die
+}
