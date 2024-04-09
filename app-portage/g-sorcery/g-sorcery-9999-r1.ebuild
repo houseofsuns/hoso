@@ -8,7 +8,7 @@ DISTUTILS_USE_SETUPTOOLS=no
 
 inherit distutils-r1 prefix
 
-EGIT_REPO_URI="https://github.com/houseofsuns/g-sorcery.git"
+EGIT_REPO_URI="/home/markus/q/gentoo/gsource/g-sorcery/"
 inherit git-r3
 
 DESCRIPTION="framework for ebuild generators"
