@@ -2,8 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>gentoo@jonglieren-jena.de</email>
+		<email>gentoo@houseofsuns.org</email>
 		<name>Markus Walter</name>
 	</maintainer>
-	<longdescription>Forward compatibility for Emacs-24.4s nadvice</longdescription>
+	<longdescription>Forward compatibility for Emacs-24.4's nadvice</longdescription>
 </pkgmetadata>
