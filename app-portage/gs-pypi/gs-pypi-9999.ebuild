@@ -26,7 +26,7 @@ src_prepare() {
 	default
 }
 
-python_install_all() {
-	   distutils-r1_python_install_all
-	   doman docs/*.8
-}
+# python_install_all() {
+# 	   distutils-r1_python_install_all
+# 	   doman docs/*.8
+# }
