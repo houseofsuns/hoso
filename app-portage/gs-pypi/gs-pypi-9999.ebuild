@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{11..14} )
 DISTUTILS_USE_PEP517=setuptools
 
-inherit distutils-r1 # prefix
+inherit distutils-r1 prefix
 
 EGIT_REPO_URI="https://github.com/houseofsuns/gs-pypi.git"
 inherit git-r3
@@ -21,12 +21,12 @@ DEPEND=">=app-portage/g-sorcery-9999[bson(-),git(-),${PYTHON_USEDEP}]
 	   dev-python/beautifulsoup4[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
 
-# src_prepare() {
-# 	hprefixify setup.py
-# 	default
-# }
+src_prepare() {
+	hprefixify setup.py
+	default
+}
 
-# python_install_all() {
-# 	   distutils-r1_python_install_all
-# 	   doman docs/*.8
-# }
+python_install_all() {
+	   distutils-r1_python_install_all
+	   doman docs/*.8
+}
