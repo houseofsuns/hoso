@@ -6,7 +6,7 @@ EAPI=8
 REALNAME="black"
 REALVERSION="22.12.0"
 DIGEST_SOURCES="yes"
-PYTHON_COMPAT=( python{3_7,3_8,3_9,3_10,3_11} )
+PYTHON_COMPAT=( python3_{10..15} )
 DISTUTILS_USE_PEP517=standalone
 
 inherit gs-pypi
