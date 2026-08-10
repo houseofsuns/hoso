@@ -24,6 +24,7 @@ RDEPEND="
 	>=dev-python/pikepdf-8.10.1[${PYTHON_USEDEP}]
 	>=dev-python/pillow-10.0.1[jpeg2k,lcms,${PYTHON_USEDEP}]
 	>=dev-python/pluggy-1.0[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.13.4[${PYTHON_USEDEP}]
 	>=dev-python/rich-13.0[${PYTHON_USEDEP}]
 	>=media-gfx/img2pdf-0.5[${PYTHON_USEDEP}]
 "
