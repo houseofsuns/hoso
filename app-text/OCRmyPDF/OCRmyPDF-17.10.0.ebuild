@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( python3_{12..13} )
+PYTHON_COMPAT=( python3_{12..14} )
 
 inherit distutils-r1 optfeature pypi shell-completion
 
@@ -26,6 +26,7 @@ RDEPEND="
 	>=dev-python/pluggy-1.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-2.13.4[${PYTHON_USEDEP}]
 	>=dev-python/rich-13.0[${PYTHON_USEDEP}]
+	>=dev-python/uharfbuzz-0.51.1[${PYTHON_USEDEP}]
 	>=media-gfx/img2pdf-0.5[${PYTHON_USEDEP}]
 "
 # TODO: package PyMuPDF for tests
