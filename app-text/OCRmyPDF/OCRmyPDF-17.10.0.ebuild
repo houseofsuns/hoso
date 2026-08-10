@@ -1,4 +1,4 @@
-# Copyright 2020-2025 Gentoo Authors
+# Copyright 2020-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -41,8 +41,6 @@ BDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-16.10.2-suppress-runtime-error.patch
-	"${FILESDIR}"/${PN}-16.10.2-xfail-tests.patch
 )
 
 EPYTEST_PLUGINS=( hypothesis )
