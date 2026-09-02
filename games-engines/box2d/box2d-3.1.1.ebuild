@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -33,9 +33,10 @@ src_prepare() {
 
 src_configure() {
 	local mycmakeargs=(
-		-DBOX2D_BUILD_TESTBED=OFF # bundled libs, broken anyway right now
-		-DBOX2D_BUILD_UNIT_TESTS=$(usex test)
-		-DBOX2D_BUILD_DOCS=$(usex doc)
+		-DBOX2D_BENCHMARKS=OFF # bundled libs, broken anyway right now
+		-DBOX2D_UNIT_TESTS=$(usex test)
+		-DBOX2D_DOCS=$(usex doc)
+		-DBOX2D_SAMPLES=OFF
 	)
 	cmake_src_configure
 }
