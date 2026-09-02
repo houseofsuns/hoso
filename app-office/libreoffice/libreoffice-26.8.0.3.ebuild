@@ -87,7 +87,7 @@ KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 LO_EXTS="nlpsolver scripting-beanshell scripting-javascript wiki-publisher"
 
 IUSE="accessibility base bluetooth +branding coinmp +cups custom-cflags +dbus debug eds
-googledrive gstreamer gtk3 kde ldap +mariadb odk pdfimport postgres qt6 test valgrind vulkan
+googledrive gstreamer +gtk3 kde ldap +mariadb odk pdfimport postgres qt6 test valgrind vulkan
 $(printf 'libreoffice_extensions_%s ' ${LO_EXTS})"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
@@ -281,7 +281,7 @@ PATCHES=(
 	# not upstreamable stuff
 	"${FILESDIR}/${PN}_box2d_no_pkgconfig.patch"
 	"${FILESDIR}/${PN}-6.1-nomancompress.patch"
-	
+
 	"${FILESDIR}/${PN}-25.2-cflags.patch"
 )
 
